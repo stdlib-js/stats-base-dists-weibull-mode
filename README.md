@@ -69,6 +69,11 @@ where `λ > 0` is the [shape parameter][shape] and `k > 0` is the [scale paramet
 ## Usage
 
 ```javascript
+import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-weibull-mode@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-weibull-mode/tags). For example,
+
+```javascript
 import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-weibull-mode@v0.2.2-esm/index.mjs';
 ```
 
@@ -149,7 +154,7 @@ v = mode( 1.0, -1.0 );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import EPS from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@esm/index.mjs';
-import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-weibull-mode@v0.2.2-esm/index.mjs';
+import mode from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-weibull-mode@esm/index.mjs';
 
 var lambda;
 var k;
