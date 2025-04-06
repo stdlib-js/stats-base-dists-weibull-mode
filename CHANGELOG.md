@@ -4,15 +4,25 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-05)
+## Unreleased (2025-04-06)
+
+<section class="features">
+
+### Features
+
+-   [`aab376a`](https://github.com/stdlib-js/stdlib/commit/aab376a914ab10e12c96d747034d1f989bf95125) - added C implementation for `stats/base/dists/weibull/mode` [(#4324)](https://github.com/stdlib-js/stdlib/pull/4324)
+
+</section>
+
+<!-- /.features -->
 
 <section class="issues">
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#4992](https://github.com/stdlib-js/stdlib/issues/4992)
+[#3846](https://github.com/stdlib-js/stdlib/issues/3846), [#4992](https://github.com/stdlib-js/stdlib/issues/4992)
 
 </section>
 
@@ -24,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`aab376a`](https://github.com/stdlib-js/stdlib/commit/aab376a914ab10e12c96d747034d1f989bf95125) - **feat:** added C implementation for `stats/base/dists/weibull/mode` [(#4324)](https://github.com/stdlib-js/stdlib/pull/4324) _(by Dhruv Arvind Singh, Philipp Burckhardt, stdlib-bot)_
 -   [`1ebcfd6`](https://github.com/stdlib-js/stdlib/commit/1ebcfd618beaf055a7097c89f3794d507fd14947) - **bench:** refactor random number generation in `stats/base/dists/weibull` [(#5342)](https://github.com/stdlib-js/stdlib/pull/5342) _(by Gaurav)_
 
 </details>
@@ -36,9 +47,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Dhruv Arvind Singh
 -   Gaurav
+-   Philipp Burckhardt
 
 </section>
 
