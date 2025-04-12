@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-06)
+## Unreleased (2025-04-12)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`8f7ce32`](https://github.com/stdlib-js/stdlib/commit/8f7ce3212535ee00b668ec69fdf8f94276104855) - **chore:** clean-up _(by Athan Reines)_
 -   [`aab376a`](https://github.com/stdlib-js/stdlib/commit/aab376a914ab10e12c96d747034d1f989bf95125) - **feat:** added C implementation for `stats/base/dists/weibull/mode` [(#4324)](https://github.com/stdlib-js/stdlib/pull/4324) _(by Dhruv Arvind Singh, Philipp Burckhardt, stdlib-bot)_
 -   [`1ebcfd6`](https://github.com/stdlib-js/stdlib/commit/1ebcfd618beaf055a7097c89f3794d507fd14947) - **bench:** refactor random number generation in `stats/base/dists/weibull` [(#5342)](https://github.com/stdlib-js/stdlib/pull/5342) _(by Gaurav)_
 
@@ -47,8 +48,9 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Dhruv Arvind Singh
 -   Gaurav
 -   Philipp Burckhardt
