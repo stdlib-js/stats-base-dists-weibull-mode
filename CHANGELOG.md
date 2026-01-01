@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-12)
+## Unreleased (2026-01-01)
 
 <section class="features">
 
@@ -34,9 +34,12 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`edccce1`](https://github.com/stdlib-js/stdlib/commit/edccce1444f24145380aa51e8439f95928bda403) - **docs:** replace manual `for` loop in examples [(#9479)](https://github.com/stdlib-js/stdlib/pull/9479) _(by Harsh Yadav)_
+-   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`9c21fd2`](https://github.com/stdlib-js/stdlib/commit/9c21fd20ef8b8a6a88abb96d80ea6d8e4c5434eb) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
 -   [`8f7ce32`](https://github.com/stdlib-js/stdlib/commit/8f7ce3212535ee00b668ec69fdf8f94276104855) - **chore:** clean-up _(by Athan Reines)_
 -   [`aab376a`](https://github.com/stdlib-js/stdlib/commit/aab376a914ab10e12c96d747034d1f989bf95125) - **feat:** added C implementation for `stats/base/dists/weibull/mode` [(#4324)](https://github.com/stdlib-js/stdlib/pull/4324) _(by Dhruv Arvind Singh, Philipp Burckhardt, stdlib-bot)_
--   [`1ebcfd6`](https://github.com/stdlib-js/stdlib/commit/1ebcfd618beaf055a7097c89f3794d507fd14947) - **bench:** refactor random number generation in `stats/base/dists/weibull` [(#5342)](https://github.com/stdlib-js/stdlib/pull/5342) _(by Gaurav)_
+-   [`1ebcfd6`](https://github.com/stdlib-js/stdlib/commit/1ebcfd618beaf055a7097c89f3794d507fd14947) - **bench:** refactor random number generation in `stats/base/dists/weibull` [(#5342)](https://github.com/stdlib-js/stdlib/pull/5342) _(by Gaurav Jadhav)_
 
 </details>
 
@@ -48,11 +51,12 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Dhruv Arvind Singh
--   Gaurav
+-   Gaurav Jadhav
+-   Harsh Yadav
 -   Philipp Burckhardt
 
 </section>
