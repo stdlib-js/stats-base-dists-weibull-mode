@@ -62,38 +62,32 @@ where `λ > 0` is the [shape parameter][shape] and `k > 0` is the [scale paramet
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-weibull-mode
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-mode = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-weibull-mode@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var mode = require( 'path/to/vendor/umd/stats-base-dists-weibull-mode/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-weibull-mode@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.mode;
-})();
-</script>
+var mode = require( '@stdlib/stats-base-dists-weibull-mode' );
 ```
 
 #### mode( k, lambda )
@@ -165,16 +159,11 @@ v = mode( 1.0, -1.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-weibull-mode@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var EPS = require( '@stdlib/constants-float64-eps' );
+var mode = require( '@stdlib/stats-base-dists-weibull-mode' );
 
 var opts = {
     'dtype': 'float64'
@@ -183,11 +172,6 @@ var lambda = uniform( 10, EPS, 10.0, opts );
 var k = uniform( 10, EPS, 10.0, opts );
 
 logEachMap( 'k: %0.4f, λ: %0.4f, mode(X;k,λ): %0.4f', k, lambda, mode );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -196,7 +180,99 @@ logEachMap( 'k: %0.4f, λ: %0.4f, mode(X;k,λ): %0.4f', k, lambda, mode );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/weibull/mode.h"
+```
+
+#### stdlib_base_dists_weibull_mode( k, lambda )
+
+Returns the [mode][mode] of a [Weibull][weibull-distribution] distribution with parameters `k` (shape parameter) and `lambda` (scale parameter).
+
+```c
+double out = stdlib_base_dists_weibull_mode( 4.0, 12.0 );
+// returns ~11.167
+```
+
+The function accepts the following arguments:
+
+-   **k**: `[in] double` shape parameter.
+-   **lambda**: `[in] double` scale parameter.
+
+```c
+double stdlib_base_dists_weibull_mode( const double k, const double λ );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/weibull/mode.h"
+#include "stdlib/constants/float64/eps.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double lambda;
+    double k;
+    double y;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        k = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
+        lambda = random_uniform( STDLIB_CONSTANT_FLOAT64_EPS, 10.0 );
+        y = stdlib_base_dists_weibull_mode( k, lambda );
+        printf( "k: %lf, λ: %lf, mode(X;k,λ): %lf\n", k, lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
